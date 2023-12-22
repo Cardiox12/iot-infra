@@ -1,4 +1,4 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: site
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: site
-        image: "wil42/playground:v1"
+        image: "wil42/playground:v2"
         resources:
           limits:
             memory: "128Mi"
